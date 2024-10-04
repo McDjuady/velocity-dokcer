@@ -11,8 +11,8 @@ ENV JAVA_MEMORY="512M"
 ENV JAVA_FLAGS="-XX:+UseStringDeduplication -XX:+UseG1GC -XX:G1HeapRegionSize=4M -XX:+UnlockExperimentalVMOptions -XX:+ParallelRefProcEnabled -XX:+AlwaysPreTouch"
 
 WORKDIR /data
-
-RUN apk add --upgrade --no-cache openssl && \
+RUN mkdir -p /data && \
+    apk add --upgrade --no-cache openssl && \
     addgroup -S velocity && \
     adduser -S velocity -G velocity && \
     chown velocity:velocity /data
