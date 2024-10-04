@@ -12,7 +12,13 @@ ENV JAVA_FLAGS="-XX:+UseStringDeduplication -XX:+UseG1GC -XX:G1HeapRegionSize=4M
 
 WORKDIR /data
 
-RUN apk add --upgrade --no-cache openssl
+RUN mkdir -p /data && \
+    apk add --upgrade --no-cache openssl && \
+    addgroup -g ${VELOCITY_PGID:-1003} -S velocity && \
+    adduser -u ${VELOCITY_PUID:-1002} -S velocity -G velocity && \
+    chown -R velocity:velocity /data
+
+USER velocity
 
 VOLUME /data
 
