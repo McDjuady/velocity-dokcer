@@ -11,18 +11,13 @@ ENV JAVA_MEMORY="512M"
 ENV JAVA_FLAGS="-XX:+UseStringDeduplication -XX:+UseG1GC -XX:G1HeapRegionSize=4M -XX:+UnlockExperimentalVMOptions -XX:+ParallelRefProcEnabled -XX:+AlwaysPreTouch"
 
 WORKDIR /data
-RUN mkdir -p /data && \
-    apk add --upgrade --no-cache openssl && \
-    addgroup -S velocity && \
-    adduser -S velocity -G velocity && \
-    chown velocity:velocity /data
 
-USER velocity
+RUN apk add --upgrade --no-cache openssl
 
 VOLUME /data
 
 EXPOSE 25577
 
-COPY --chown=velocity velocity/velocity-*.jar /opt/velocity/velocity.jar
+COPY velocity/velocity-*.jar /opt/velocity/velocity.jar
 
 ENTRYPOINT java -Xms$JAVA_MEMORY -Xmx$JAVA_MEMORY $JAVA_FLAGS -jar /opt/velocity/velocity.jar
