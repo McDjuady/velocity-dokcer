@@ -3,6 +3,8 @@
 [![Watch velocity release](https://github.com/treysu/velocity/actions/workflows/watch-releases.yaml/badge.svg)](https://github.com/treysu/velocity/actions/workflows/watch-releases.yaml)
 [![GitHub](https://img.shields.io/github/license/treysu/velocity?color=informational)](https://github.com/treysu/velocity/blob/main/LICENSE)
 
+This project is a work in progress. It is a fork of another project, now archived.
+
 This is a [Velocity](https://velocitypowered.com/) docker image with optimized Java flag provided by official [docs](https://velocitypowered.com/wiki/users/getting-started/).
 
 We use [GitHub Actions](https://github.com/treysu/velocity/actions) to track Velocity builds and automatically build Docker image.
