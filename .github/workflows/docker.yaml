@@ -29,7 +29,7 @@ jobs:
         id: docker_meta
         uses: docker/metadata-action@v5
         with:
-          images: dockcenter/velocity
+          images: treysu/velocity
           tags: ${{ inputs.tags }}
 
       - name: Set up Docker Buildx
