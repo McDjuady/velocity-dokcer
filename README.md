@@ -1,4 +1,4 @@
-# Velocity Automatically Built Docker Image
+# 🐳  Velocity Docker Image
 
 [![Watch velocity release](https://github.com/treysu/velocity/actions/workflows/watch-releases.yaml/badge.svg)](https://github.com/treysu/velocity/actions/workflows/watch-releases.yaml)
 [![GitHub](https://img.shields.io/github/license/treysu/velocity?color=informational)](https://github.com/treysu/velocity/blob/main/LICENSE)
