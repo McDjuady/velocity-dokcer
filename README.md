@@ -1,11 +1,11 @@
 # Velocity Automatically Built Docker Image
 
-[![Watch velocity release](https://github.com/dockcenter/velocity/actions/workflows/watch-releases.yaml/badge.svg)](https://github.com/dockcenter/velocity/actions/workflows/watch-releases.yaml)
-[![GitHub](https://img.shields.io/github/license/dockcenter/velocity?color=informational)](https://github.com/dockcenter/velocity/blob/main/LICENSE)
+[![Watch velocity release](https://github.com/treysu/velocity/actions/workflows/watch-releases.yaml/badge.svg)](https://github.com/treysu/velocity/actions/workflows/watch-releases.yaml)
+[![GitHub](https://img.shields.io/github/license/treysu/velocity?color=informational)](https://github.com/treysu/velocity/blob/main/LICENSE)
 
 This is a [Velocity](https://velocitypowered.com/) docker image with optimized Java flag provided by official [docs](https://velocitypowered.com/wiki/users/getting-started/).
 
-We use [GitHub Actions](https://github.com/dockcenter/velocity/actions) to track Velocity builds and automatically build Docker image.
+We use [GitHub Actions](https://github.com/treysu/velocity/actions) to track Velocity builds and automatically build Docker image.
 
 ## What is Velocity?
 
@@ -33,18 +33,18 @@ With this image, you can create a new Velocity Minecraft proxy server with one c
 Here is an example:
 
 ```bash
-sudo docker run -p 25577:25577 dockcenter/velocity:stable
+sudo docker run -p 25577:25577 treysu/velocity:stable
 ```
 
 While this command will work just fine in many cases, it is only the bare minimum required to start a functional server and can be vastly improved by specifying some options.
 
 ## How to extend this image
 
-There are many ways to extend the `dockcenter/velocity` image. Without trying to support every possible use case, here are just a few that we have found useful.
+There are many ways to extend the `treysu/velocity` image. Without trying to support every possible use case, here are just a few that we have found useful.
 
 ### Environment Variables
 
-The `dockcenter/velocity` image uses several environment variables which are easy to miss.
+The `treysu/velocity` image uses several environment variables which are easy to miss.
 `JAVA_MEMORY` environment variable is not required, but it is highly recommended to set an appropriate value according to your usage.
 
 #### `JAVA_MEMORY`
@@ -79,22 +79,22 @@ Using bind mount:
 
 ## Image Variants
 
-The `dockcenter/velocity` images come in many flavors, each designed for a specific use case.
+The `treysu/velocity` images come in many flavors, each designed for a specific use case.
 
-### `dockcenter/velocity:stable`
+### `treysu/velocity:stable`
 
 This is the stable image.
 If you are unsure about what your needs are, you probably want to use this one.
 It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-### `dockcenter/velocity:latest`
+### `treysu/velocity:latest`
 
 This is the development build of the image.
 Only use this image when you need the cutting edge features or want to try something new.
 
 **It is not recommended to run this image in production environment.**
 
-### `dockcenter/velocity:<version>-SNAPSHOT`
+### `treysu/velocity:<version>-SNAPSHOT`
 
 This is the snapshot image for each development build. 
 The latest snapshot build is tagged `latest`.
@@ -105,6 +105,6 @@ The latest snapshot build is tagged `latest`.
 
 Be careful using this container image as you must meet the obligations and conditions of the [GPLv3 ](https://github.com/PaperMC/Velocity/blob/dev/3.0.0/LICENSE) provided by the [Velocity](https://github.com/PaperMC/Velocity) development team.
 
-The code for the [project](https://github.com/dockcenter/velocity) that builds the [`dockcenter/velocity`](https://hub.docker.com/r/dockcenter/velocity) image and pushes it to Docker Hub is distributed under the [MIT License](https://github.com/dockcenter/velocity/blob/main/LICENSE).
+The code for the [project](https://github.com/treysu/velocity) that builds the [`treysu/velocity`](https://hub.docker.com/r/treysu/velocity) image and pushes it to Docker Hub is distributed under the [MIT License](https://github.com/treysu/velocity/blob/main/LICENSE).
 
 Please, don't confuse the two licenses.

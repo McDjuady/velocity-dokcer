@@ -10,7 +10,7 @@ steps:
   - name: Build
     image: golang:1.18.2-alpine
     commands:
-      - go build -o bin/discover github.com/dockcenter/velocity/cmd/discover
+      - go build -o bin/discover github.com/treysu/velocity/cmd/discover
   - name: Discover releases
     image: alpine
     when:
@@ -71,7 +71,7 @@ steps:
     settings:
       dockerfile: Dockerfile
       dry_run: true
-      repo: dockcenter/velocity
+      repo: treysu/velocity
       tags: ${DOCKER_TAGS}
       username:
         from_secret: docker_username
@@ -86,7 +86,7 @@ steps:
           - development
     settings:
       dockerfile: Dockerfile
-      repo: dockcenter/velocity
+      repo: treysu/velocity
       tags: ${DOCKER_TAGS}
       username:
         from_secret: docker_username

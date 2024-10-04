@@ -3,7 +3,7 @@ FROM eclipse-temurin:17-jre-alpine
 LABEL org.opencontainers.image.vendor="Dockcenter"
 LABEL org.opencontainers.image.title="Velocity"
 LABEL org.opencontainers.image.description="Automatically built Docker image for Velocity"
-LABEL org.opencontainers.image.documentation="https://github.com/dockcenter/velocity/blob/main/README.md"
+LABEL org.opencontainers.image.documentation="https://github.com/treysu/velocity/blob/main/README.md"
 LABEL org.opencontainers.image.authors="Chao Tzu-Hsien <danny900714@gmail.com>"
 LABEL org.opencontainers.image.licenses="MIT"
 

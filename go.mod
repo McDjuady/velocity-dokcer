@@ -1,4 +1,4 @@
-module github.com/dockcenter/velocity
+module github.com/treysu/velocity
 
 go 1.18
 

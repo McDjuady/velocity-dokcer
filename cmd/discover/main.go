@@ -3,11 +3,12 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	. "github.com/treysullivent/velocity/internal/app/discover"
-	"github.com/go-resty/resty/v2"
 	"os"
 	"strconv"
 	"strings"
+
+	"github.com/go-resty/resty/v2"
+	. "github.com/treysu/velocity/internal/app/discover"
 )
 
 func main() {

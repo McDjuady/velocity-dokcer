@@ -2,7 +2,7 @@ package discover
 
 import (
 	"fmt"
-	"github.com/dockcenter/velocity/internal/pkg/utils/slices"
+	"github.com/treysu/velocity/internal/pkg/utils/slices"
 	"golang.org/x/mod/semver"
 	"sort"
 	"strings"

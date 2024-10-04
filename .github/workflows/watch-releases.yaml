@@ -25,7 +25,7 @@ jobs:
           check-latest: true
           cache: true
       - name: Run discover script
-        run: go run github.com/treysullivent/velocity/cmd/discover
+        run: go run github.com/treysu/velocity/cmd/discover
       - name: Dispatch 'Build and push Docker image' workflow
         run: scripts/dispatch.sh
         env:
